@@ -4,7 +4,7 @@ Before to use:
 
 - In `group_vars/all` insert your ssh-public-key and the ruby version you want to install
 
-- Edit inventory file `staging`
+- Specify your host/s in the inventory file `staging` 
 
 - (Optional) Run `ansible-playbook -s bootstrap.yml -i staging` to create ruby user and little server hardening
 
