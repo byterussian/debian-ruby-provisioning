@@ -1,0 +1,14 @@
+bootstrap_ansibleuser: deploy
+bootstrap_publickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDN5JqhzIvm9ulu8HrBOKNL8dZYnMYKWd3Ns/ffkAwWp+p9kNwiKK9rl2nB5VDLAIYi5VmhZOxHoTGhwoYc7piOBoox0s7ApDxEL0ErmpaUa0FqSTclPUhV2HJ4MR8O9NddGe5QX/H1XUuTiLTPViPpmsJFZA3teLtrz0RC45KDG5xjYf27jpeJdVeX8owFgMiRRX0MGa50uPNOVxDlSbS3OH8xqFtnjXhFcorfJnB29Q7IDP8m6mtMb6dytWIj87G3njUG2VyLGqQizDs/M0uiTDWFPaqam4c+IzFnRCUwi9YrEZYfF/ANxpRy0CNO+ffmWOGmi3001Fbk89vhZ/rv5yQJ5K7gP7f3W3Y4kJcaE801K+G4ufOe5uAPN/VGB33nJpYzVkmub437uwyLO+vD3KdIkVpkf8KAI/nzjgp9GnrrMcb5usqPhWclxXnFAB8ovVfa/PjhgMunMLUHFQdVD7xbScR2YElLhSnZYeTYIAxjw97XWrtBSMjSiHOxjt5AhE6xyiJYHFY5aQcrc/JPrcXx+tofGPCEA+V1ALW4a99FXghzMAxjw/cyCOui45jTUHSWdYlyTjdcPrQEXMY4w47tET24QwJAMoKV9qc6QpLyuisrxZEn9lS76FjcwMRXadp6378xcbCg9i3vca7MNYXFOTDJ1K/XKVU7Zej7Sw== rocco@galluzzo.me
+unattended_origins_patterns: 'origin=Debian,a=stable,label=Debian-Security' # security updates
+
+rbenv:
+  env: user
+  version: v1.0.0
+  ruby_version: 2.3.1
+
+rbenv_root: $HOME/.rbenv
+
+
+rbenv_owner: 'deploy'
+rbenv_group: 'deploy'

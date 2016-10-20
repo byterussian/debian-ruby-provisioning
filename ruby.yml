@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  user: deploy
+  sudo: True
+  pre_tasks:
+  - name: Update APT packages cache
+    apt: update_cache=yes
+
+  - name: Perform aptitude safe-upgrade
+    apt: upgrade=yes
+  roles:
+    - zzet.rbenv
