@@ -2,7 +2,7 @@
 
 Before to use:
 
-- In `group_vars/all` insert your ssh-public-key and ruby version you want to install
+- In `group_vars/all` insert your ssh-public-key and the ruby version you want to install
 
 - Edit inventory file `staging`
 
